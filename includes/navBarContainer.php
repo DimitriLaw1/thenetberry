@@ -1,21 +1,18 @@
 
-
 	<div class="scrollmenu" id="navBarContainer">
 				<nav class="navBar ">
 					<span role="link" tabindex="0" onclick="openPage('index.php')"class="logo"> 
 						<img src="assets/images/logonew.png">
 					</span>
 <div id="outside"> 
-	<div class="navItem">
-		<span role="link" tabindex="0" onclick="openPage('profile.php')" class="navItemLink">My Profile <img src="assets/images/icons/account.png" class="icon" alt="Search"></span>
-	</div>
+	
 
 <div class="profile-pic" id="user-profile-pic">
 <img src="assets/images/profile-pics/newmee.jpg"></>
 </div>
 
 <div id="user-info">
-<p id="top-user-text"> Dimitri Law <img src="assets/images/icons/verified.png" style="width:15px; height: 15px;"></p>
+<p class="topName" id="top-user-text"> <?php echo $userLoggedIn; ?> <img src="assets/images/icons/verified.png" style="width:15px; height: 15px;"></p>
 <p id="top-user-text2"> Entrepreneur </p>
 <p id="top-user-text3"> Greensboro, NC </p>
 
@@ -27,6 +24,21 @@
 	</div>
 
 </div>
+
+<div class="navItem navItemLink1">
+		<p>My Profile</p>
+	</div>
+
+
+	<div class="navItem">
+		<span role="link" tabindex="0" onclick="openPage('profile.php')" class="navItemLink">My Profile <img src="assets/images/icons/account.png" class="icon" alt="Search"></span>
+	</div>
+
+
+
+
+
+
 					<div class="navItem navItemLink1">
 		<p>Browse Music</p>
 	</div>
@@ -86,6 +98,19 @@
 
 	<div class="navItem">
 		<span role="link" tabindex="0" onclick="openPage('yourPlaylist.php')" class="navItemLink">My Playlist<img src="assets/images/icons/playw.png" class="icon" alt="Search"></span>
+	</div>
+
+	<div class="navItem navItemLink1">
+		<p>My Settings</p>
+	</div>
+
+
+	<div class="navItem">
+		<span role="link" tabindex="0" onclick="openPage('profile.php')" class="navItemLink">My Settings <img src="assets/images/icons/setting.png" class="icon" alt="Search"></span>
+	</div>
+
+	<div class="navItem">
+		<span role="link" tabindex="0" href="includes/handlers/logout.php"  class="navItemLink">Log Out <img src="assets/images/icons/logout.png" class="icon" alt="Search"></span>
 	</div>
 
 				</nav>
